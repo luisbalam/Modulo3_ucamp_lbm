@@ -22,7 +22,7 @@ const signup = async (req, res)=> {
 }
 
 
-const getUsers = async (req, res)=> {
+const getUser = async (req, res)=> {
     try {
 
         const resp = await user.find();
@@ -91,7 +91,7 @@ const deleteUser = async (req, res) => {
 
 module.exports = {
     signup,
-    getUsers,
+    getUser,
     updateUser,
     deleteUser,
 }
